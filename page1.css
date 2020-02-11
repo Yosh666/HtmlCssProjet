@@ -1,0 +1,169 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(/Maison/image/Bacground.jpg);
+    background-repeat: repeat-y;
+}
+header, main, footer{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #FFF1EF;
+}
+@font-face{
+    font-family: "magie";
+    src: url("police1/magie.ttf") format("ttf"),
+    url("police1/magie.eot") format("eot"),
+    url("police1/magie.woff") format("woff"),
+    url("police1/magie.woff2") format("woff2");
+    
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: serif;
+}
+    .titre{
+        display: flex;
+        align-items: flex-start;
+    }
+        .titre a {
+            width: 30%;
+        }
+            .titre a img{
+                height: 6.2em;
+
+            }   
+        h1{
+            font-size: 3em;
+            font-family: "magie";
+            width: 70%;
+            padding-left: 4.5em;
+            color: #302D38;
+            margin: 0 auto;
+        }
+ul{/*on les mets tous en display flex vu qu'il ya les images avec*/
+    display: flex;
+    list-style-type: none;/*ça serait bien de le retenir celui la*/
+    padding: 0.5em;
+}
+    ul li{
+        padding: 0.5em;
+    }
+    nav{
+        width: 90%;
+        margin: 0 auto;      
+    }
+        nav ul{
+            justify-content: space-between;
+        }
+            nav ul li{
+                padding: 0.5em 1em;
+                border: 2px solid #DACCFF;
+                border-radius: 15px;
+            }
+            nav ul a{
+                text-decoration: none;
+                color: #302D38;
+                font-family: 'Times New Roman', Times, serif;
+            }
+    .banniere {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 400px;
+    }
+        .banniere p{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0em;
+            padding: 0.8em;
+            text-indent: 1em;
+            color: #FFF1EF;
+            background-color: rgba(255,255,255,0.2);
+
+
+        }
+        .banniere a{
+            text-decoration: none;
+            position: absolute;
+            bottom: 0;
+            right: 3em;
+            color: #DACCFF;
+            padding:0.em;
+            border: 1px solid #DACCFF;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#efc5ca+0,ba2737+19,f18e99+30,d24b5a+50,f18e99+60,ba2737+79,ba2737+79 */
+            background: rgb(239,197,202); /* Old browsers */
+            background: -moz-linear-gradient(-45deg,  rgba(239,197,202,1) 0%, rgba(186,39,55,1) 19%, rgba(241,142,153,1) 30%, rgba(210,75,90,1) 50%, rgba(241,142,153,1) 60%, rgba(186,39,55,1) 79%, rgba(186,39,55,1) 79%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg,  rgba(239,197,202,1) 0%,rgba(186,39,55,1) 19%,rgba(241,142,153,1) 30%,rgba(210,75,90,1) 50%,rgba(241,142,153,1) 60%,rgba(186,39,55,1) 79%,rgba(186,39,55,1) 79%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg,  rgba(239,197,202,1) 0%,rgba(186,39,55,1) 19%,rgba(241,142,153,1) 30%,rgba(210,75,90,1) 50%,rgba(241,142,153,1) 60%,rgba(186,39,55,1) 79%,rgba(186,39,55,1) 79%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#ba2737',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            border-radius: 15px;
+        }
+/* on passe au main*/
+    .contenu{
+        display: flex;
+    }
+        article{
+            width: 70%;
+            position: relative;
+            top: 0;
+            left: 0;
+            margin: 0 2em;
+            
+        }
+            h2{
+                display: inline;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 1.5em;
+            }
+                h2 img{
+                    width: 5em;
+                }
+            article p{
+                padding: 0 2em;
+            }
+        aside{
+            width: 30%;            
+            background-color:#302D38 ;
+            color: #FFF1EF;
+            padding: 0 2em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            h3{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 1.5em;
+                text-align: center;
+            }
+            .blason{
+                display: block;
+                width: 9em;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            aside ul img{
+                width: 2.5em;
+                
+            }
+/*footer*/
+
+    footer{ 
+        display: flex;
+        justify-content: space-around;
+        color: #FFF1EF;
+        background-color: #302D38;
+        
+    }
+        footer  ul img{
+            width: 2.5em;
+            padding: 1em;
+        }
+        h4{
+            text-align: center;
+        }
+        .galerie p{
+            text-align: center;
+        }
